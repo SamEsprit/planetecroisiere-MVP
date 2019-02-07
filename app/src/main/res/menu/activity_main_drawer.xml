@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/baseline_menu_24"
+            android:title="Général" />
+        <item
+            android:id="@+id/nav_reservation"
+            android:icon="@drawable/baseline_pages_24"
+            android:title="Réservation" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/baseline_star_24"
+            android:title="Favoris" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/baseline_info_24"
+                android:title="Qui somme Nous ?" />
+        </menu>
+    </item>
+
+</menu>

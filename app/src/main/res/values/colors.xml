@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#024AB8</color>
+    <color name="colorPrimarybg">#83024AB8</color>
+    <color name="colorPrimaryDark">#024AB8</color>
+    <color name="centre_button_color">#ffa200</color>
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_bg">#E6E6E6</color>
+    <color name="grey_soft">#F5F5F5</color>
+
+
+    <!--FoldingCell-->
+    <color name="bgBackSideColor">#F4F0FF</color>
+    <color name="bgTitleLeft">#594691</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#594691</color>
+    <color name="bgContent">#FFFFFF</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#adafb1</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#FFBF12</color>
+    <color name="btnRequestbg">#79FFBF12</color>
+    <color name="darkOverlaySoft">#40000000</color>
+    <color name="whiteOverlay">#40FFFFFF</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#8955D1</color>
+    <color name="bg_screen2">#FDA52A</color>
+    <color name="bg_screen3">#07B2DD</color>
+    <color name="bg_screen4">#50A50A</color>
+
+</resources>

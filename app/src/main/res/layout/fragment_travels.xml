@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/filtred_travel_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/layout_shimmer_item_travel"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        app:shimmer_demo_angle="20"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btnRequest"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/btnRequest"
+            android:gravity="center"
+            android:text="TROUVEZ VOTRE CROISIÈRE"
+            android:textColor="@color/space_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/main_expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:ael_duration="400"
+            app:ael_expanded="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="false">
+
+                    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                        android:id="@+id/destination_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:RevealEmptyText="Destinations"
+                        app:SearchHintText="Destinations"
+                        app:SearchViewBackgroundColor="@android:color/white"
+                        app:ShowBorders="false"
+                        app:SpinnerExpandHeight="150dp"
+                        app:StartSearchTintColor="@android:color/black" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Date de départ"
+                    android:textColor="@color/bpWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@android:color/black">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Du :"
+                                android:textColorLink="@color/bgContent" />
+                        </android.support.design.widget.TextInputLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@android:color/black">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Au :" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="false">
+
+                    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                        android:id="@+id/place_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:RevealEmptyText="Ports de départ"
+                        app:SearchHintText="Ports de départ"
+                        app:SearchViewBackgroundColor="@android:color/white"
+                        app:ShowBorders="true"
+                        app:SpinnerExpandHeight="150dp"
+                        app:StartSearchTintColor="@android:color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="false">
+
+                    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                        android:id="@+id/cruiseLine_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:RevealEmptyText="Compagnies"
+                        app:SearchHintText="Compagnies"
+                        app:SearchViewBackgroundColor="@android:color/white"
+                        app:ShowBorders="true"
+                        app:SpinnerExpandHeight="150dp"
+                        app:StartSearchTintColor="@android:color/black" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="false">
+
+                    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+                        android:id="@+id/boat_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:RevealEmptyText="Navires"
+                        app:SearchHintText="Navires"
+                        app:SearchViewBackgroundColor="@android:color/white"
+                        app:ShowBorders="true"
+                        app:SpinnerExpandHeight="150dp"
+                        app:StartSearchTintColor="@android:color/black" />
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Rechercher"
+                    android:textColor="@color/space_white" />
+            </LinearLayout>
+        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

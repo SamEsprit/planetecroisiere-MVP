@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    folding-cell:cardBackgroundColor="@color/bgBackSideColor"
+    folding-cell:cardCornerRadius="3dp"
+    folding-cell:cardElevation="2dp"
+    folding-cell:cardUseCompatPadding="true">
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        folding-cell:additionalFlipsCount="2"
+        folding-cell:animationDuration="1000"
+        folding-cell:backSideColor="@color/bpWhite"
+        folding-cell:cameraHeight="20">
+
+        <!-- CONTENT (UNFOLDED) LAYOUT (MUST BE AT LEAST 2x times BIGGER than content layout bellow)-->
+        <include layout="@layout/cell_content_layout" />
+
+        <!-- TITLE (FOLDED) LAYOUT (MUST BE AT LEAST 2x times SMALLER than content layout above) -->
+        <include layout="@layout/cell_title_layout" />
+
+    </com.ramotion.foldingcell.FoldingCell>
+</android.support.v7.widget.CardView>
